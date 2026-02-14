@@ -1,0 +1,9 @@
+<div>
+  <label for="px">Px</label>
+  <input [ngModel]="pxValue()" (ngModelChange)="updateFromPx($event)" placeholder="PX" type="number"/>
+</div>
+
+<div>
+  <label for="rem">Rem</label>
+  <input [ngModel]="remValue()" (ngModelChange)="updateFromRem($event)" placeholder="REM" type="number"/>
+</div>
