@@ -1,9 +1,19 @@
-<div>
-  <label for="px">Px</label>
-  <input [ngModel]="pxValue()" (ngModelChange)="updateFromPx($event)" placeholder="PX" type="number"/>
-</div>
+<tui-textfield tuiTextfieldSize="m">
+  <label tuiLabel>Pixels</label>
+  <input
+    tuiInputNumber
+    [min]="0"
+    [ngModel]="pxValue()"
+    (ngModelChange)="updateFromPx($event)"
+  />
+</tui-textfield>
 
-<div>
-  <label for="rem">Rem</label>
-  <input [ngModel]="remValue()" (ngModelChange)="updateFromRem($event)" placeholder="REM" type="number"/>
-</div>
+<tui-textfield tuiTextfieldSize="m">
+  <label tuiLabel>REM</label>
+  <input
+      tuiInputNumber
+      [min]="0"
+      [ngModel]="remValue()"
+      (ngModelChange)="updateFromRem($event)"
+  />
+</tui-textfield>

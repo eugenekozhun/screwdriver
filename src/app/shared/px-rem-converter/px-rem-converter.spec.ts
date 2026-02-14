@@ -8,9 +8,8 @@ describe('PxRemConverter', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PxRemConverter]
-    })
-    .compileComponents();
+      imports: [PxRemConverter],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PxRemConverter);
     component = fixture.componentInstance;
